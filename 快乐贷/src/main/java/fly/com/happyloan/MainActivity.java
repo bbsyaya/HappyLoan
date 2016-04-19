@@ -1,12 +1,25 @@
 package fly.com.happyloan;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.FrameLayout;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 import fly.com.happyloan.Fragment.FindsFragment;
 import fly.com.happyloan.Fragment.FriendsFragment;
@@ -28,10 +41,13 @@ public class MainActivity extends AppCompatActivity {
     FindsFragment finds_fragment;
     MeFragment me_fragment;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         findViewById();
         //碎片
@@ -78,4 +94,6 @@ public class MainActivity extends AppCompatActivity {
             ft.commit();
         }
     }
+
+
 }
