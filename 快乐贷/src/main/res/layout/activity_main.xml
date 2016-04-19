@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_above="@+id/linear_menu"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/loan_black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:focusable="true"
+            android:onClick="change"
+            android:clickable="true"
+            android:id="@+id/tv_loan"
+            android:text="@string/loan"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/friend_black"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="change"
+            android:clickable="true"
+            android:id="@+id/tv_friends"
+            android:text="@string/friends"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/find_black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="change"
+            android:clickable="true"
+            android:id="@+id/tv_finds"
+            android:text="@string/finds"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/me_black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="change"
+            android:clickable="true"
+            android:id="@+id/tv_me"
+            android:text="@string/me"/>
+    </LinearLayout>
+
+</LinearLayout>
