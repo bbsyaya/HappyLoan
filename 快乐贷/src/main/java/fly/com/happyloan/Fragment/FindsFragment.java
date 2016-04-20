@@ -28,9 +28,9 @@ public class FindsFragment extends Fragment implements AdapterView.OnItemClickLi
     ListView list_finds;
     private int[] imageIds = new int[]{R.mipmap.ic_launcher, R.mipmap.ic_launcher,
             R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,R.mipmap.ic_launcher,};
-    private String[] names = new  String[]{"悬赏","公告","借款订阅","人脉榜","投资有道","活动","人人催"};
-    private String[] sign = new String[]{">",">",">",">",">",">",">"};
+            R.mipmap.ic_launcher};
+    private String[] names = new  String[]{"悬赏","公告","借款订阅","人脉榜","活动","人人催"};
+    private String[] sign = new String[]{">",">",">",">",">",">"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
