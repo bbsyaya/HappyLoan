@@ -25,9 +25,9 @@
         </activity>
         <activity android:name=".Activity.Me.Me_SincereActivity" >
         </activity>
-        <activity android:name=".Activity.Me.Me_MenoyActivity" >
+        <activity android:name=".Activity.Me.Me_MoneyActivity" >
         </activity>
-        <activity android:name=".Activity.Me.Me_SecuityActivity" >
+        <activity android:name=".Activity.Me.Me_SecurityActivity" >
         </activity>
     </application>
 

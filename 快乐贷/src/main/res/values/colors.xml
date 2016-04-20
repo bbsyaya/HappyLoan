@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="colorGrayMe">#eee</color>
+
+    <color name="color_gb_false">#fff</color>
+    <color name="color_gb_true">#FFB1F4E9</color>
 </resources>

@@ -1,21 +1,13 @@
 package fly.com.happyloan.Activity;
 
-import android.support.v7.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
-import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
-import android.view.LayoutInflater;
-import android.view.Menu;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import fly.com.happyloan.Fragment.FindsFragment;
 import fly.com.happyloan.Fragment.FriendsFragment;
@@ -50,28 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        //setActionBarLayout(R.layout.actionbar_me, this);
-        return true;
-    }
-
-    @SuppressLint("NewApi")
-    public void setActionBarLayout(int layoutId, Context context) {
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null){
-            actionBar.setDisplayShowHomeEnabled(false);
-            actionBar.setDisplayShowCustomEnabled(true);
-            actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-            LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view = inflater.inflate(layoutId,new LinearLayout(context),false);
-            ActionBar.LayoutParams layout = new ActionBar.LayoutParams(
-                    ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
-            actionBar.setCustomView(view, layout);
-        }
-    }
-
     private void findViewById(){
         frame_content = (FrameLayout) findViewById(R.id.frame_content);
 
@@ -80,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         tv_finds = (TextView) findViewById(R.id.tv_finds);
         tv_me = (TextView) findViewById(R.id.tv_me);
     }
+
     private void Fragment(){
         fm = getSupportFragmentManager();
 
@@ -89,33 +60,82 @@ public class MainActivity extends AppCompatActivity {
         me_fragment = new MeFragment();
 
         //默认
+        tv_loan.setSelected(true);
+        tv_loan.setTextColor(Color.parseColor("#ff00bb9c"));
         ft = fm.beginTransaction();
         ft.add(R.id.frame_content,loan_fragment);
         ft.commit();
     }
 
     public void change(View v){
+        BottomMenu(v);
         if (v.getId() == R.id.tv_loan){
+
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, loan_fragment);
             ft.commit();
         }else if (v.getId() == R.id.tv_friends){
+
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, friends_fragment);
             ft.commit();
         }else if (v.getId() ==R.id.tv_finds){
+
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, finds_fragment);
             ft.commit();
         }else if (v.getId() == R.id.tv_me) {
+
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, me_fragment);
             ft.commit();
         }
     }
 
-    public void setting(View view) {
-        Toast.makeText(MainActivity.this, "设置！", Toast.LENGTH_SHORT).show();
-    }
+    public void BottomMenu(View v){
+        if (v.getId() == R.id.tv_loan){
 
+            tv_loan.setSelected(true);
+            tv_friends.setSelected(false);
+            tv_finds.setSelected(false);
+            tv_me.setSelected(false);
+            tv_loan.setTextColor(Color.parseColor("#ff00bb9c"));
+            tv_friends.setTextColor(Color.parseColor("#000000"));
+            tv_finds.setTextColor(Color.parseColor("#000000"));
+            tv_me.setTextColor(Color.parseColor("#000000"));
+
+        }else if (v.getId() == R.id.tv_friends){
+
+            tv_loan.setSelected(false);
+            tv_friends.setSelected(true);
+            tv_finds.setSelected(false);
+            tv_me.setSelected(false);
+            tv_loan.setTextColor(Color.parseColor("#000000"));
+            tv_friends.setTextColor(Color.parseColor("#ff00bb9c"));
+            tv_finds.setTextColor(Color.parseColor("#000000"));
+            tv_me.setTextColor(Color.parseColor("#000000"));
+
+        }else if (v.getId() ==R.id.tv_finds){
+
+            tv_loan.setSelected(false);
+            tv_friends.setSelected(false);
+            tv_finds.setSelected(true);
+            tv_me.setSelected(false);
+            tv_loan.setTextColor(Color.parseColor("#000000"));
+            tv_friends.setTextColor(Color.parseColor("#000000"));
+            tv_finds.setTextColor(Color.parseColor("#ff00bb9c"));
+            tv_me.setTextColor(Color.parseColor("#000000"));
+
+        }else if (v.getId() == R.id.tv_me) {
+
+            tv_loan.setSelected(false);
+            tv_friends.setSelected(false);
+            tv_finds.setSelected(false);
+            tv_me.setSelected(true);
+            tv_loan.setTextColor(Color.parseColor("#000000"));
+            tv_friends.setTextColor(Color.parseColor("#000000"));
+            tv_finds.setTextColor(Color.parseColor("#000000"));
+            tv_me.setTextColor(Color.parseColor("#ff00bb9c"));
+        }
+    }
 }
