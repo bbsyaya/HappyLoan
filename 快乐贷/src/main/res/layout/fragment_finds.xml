@@ -4,7 +4,7 @@
 
 
     <ListView
-        android:divider="@color/colorGrayMe"
+        android:divider="@color/colorGrayPublic_background"
         android:id="@+id/list_finds"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

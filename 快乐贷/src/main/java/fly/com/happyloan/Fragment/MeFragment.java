@@ -18,6 +18,7 @@ import fly.com.happyloan.Activity.Me.Me_MoneyActivity;
 import fly.com.happyloan.Activity.Me.Me_ProfitActivity;
 import fly.com.happyloan.Activity.Me.Me_SecurityActivity;
 import fly.com.happyloan.Activity.Me.Me_SincereActivity;
+import fly.com.happyloan.Activity.Me.Setting.SettingActivity;
 import fly.com.happyloan.R;
 
 
@@ -37,12 +38,15 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
     TextView me_borrow_come_money;
     TextView me_borrow_out_money;
     TextView me_profit_money;
+    TextView me_setting;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_me, container, false);
+        //设置
+        me_setting = (TextView)view.findViewById(R.id.me_setting);
         //每项的显示
         me_borrow_come = (LinearLayout) view.findViewById(R.id.me_borrow_come);
         me_borrow_out = (LinearLayout) view.findViewById(R.id.me_borrow_out);
@@ -82,6 +86,8 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
 
         me_about.setOnClickListener(this);
         me_about.setOnTouchListener(this);
+
+        me_setting.setOnClickListener(this);
     }
 
     private void startActivity(View v){
@@ -106,6 +112,9 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
                 break;
             case R.id.me_about:
                 startActivity(new Intent(getContext(),Me_AboutActivity.class));
+                break;
+            case R.id.me_setting:
+                startActivity(new Intent(getContext(), SettingActivity.class));
                 break;
         }
     }
@@ -160,4 +169,5 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
         }
         return false;
     }
+
 }

@@ -138,4 +138,5 @@ public class MainActivity extends AppCompatActivity {
             tv_me.setTextColor(Color.parseColor("#ff00bb9c"));
         }
     }
+
 }

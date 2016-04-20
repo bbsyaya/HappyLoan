@@ -29,6 +29,28 @@
         </activity>
         <activity android:name=".Activity.Me.Me_SecurityActivity" >
         </activity>
+        <activity android:name=".Activity.Me.Setting.SettingActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_UpdateLoginPwdActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_UpdateTradePwdActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_GestureActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_ChangePhoneNumActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_PayActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_MessageActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_PrivacyActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_ClearCacheActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_FeedBackActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_ProblemActivity" >
+        </activity>
     </application>
 
 </manifest>

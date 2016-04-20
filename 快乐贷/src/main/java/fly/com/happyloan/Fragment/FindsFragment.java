@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import fly.com.happyloan.Activity.MainActivity;
-import fly.com.happyloan.Adapter.FindsFragmentAdapter;
 import fly.com.happyloan.R;
 
 /**
@@ -23,12 +22,11 @@ public class FindsFragment extends Fragment implements AdapterView.OnItemClickLi
 
 
     ArrayList<HashMap<String,Object>> list = new ArrayList<>();
-    FindsFragmentAdapter adapter;
 
     ListView list_finds;
-    private int[] imageIds = new int[]{R.mipmap.ic_launcher, R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher};
+    private int[] imageIds = new int[]{R.drawable.finds_reward, R.drawable.finds_notice,
+            R.drawable.finds_subscription,R.drawable.finds_contacts,R.drawable.finds_activitys,
+            R.drawable.finds_urges};
     private String[] names = new  String[]{"悬赏","公告","借款订阅","人脉榜","活动","人人催"};
     private String[] sign = new String[]{">",">",">",">",">",">"};
     @Override
@@ -38,8 +36,6 @@ public class FindsFragment extends Fragment implements AdapterView.OnItemClickLi
         init();
         list_finds = (ListView) view.findViewById(R.id.list_finds);
         MainActivity mainActivity = (MainActivity) getActivity();
-        adapter = new FindsFragmentAdapter(list,mainActivity);
-        list_finds.setAdapter(adapter);
         list_finds.setOnItemClickListener(this);
         return view;
     }
