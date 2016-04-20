@@ -60,16 +60,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 //        getSupportActionBar().hide();
-
         findViewById();
-        //碎片
+        // 碎片
         Fragment();
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        setActionBarLayout(R.layout.actionbar_me, this);
+
+        //setActionBarLayout(R.layout.actionbar_me, this);
         return true;
     }
 
@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         ft.add(R.id.frame_content,loan_fragment);
         ft.commit();
     }
+
     public void change(View v){
         if (v.getId() == R.id.tv_loan){
             ft = fm.beginTransaction();
