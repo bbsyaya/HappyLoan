@@ -10,6 +10,6 @@ public class Me_ProfitActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profit);
+        setContentView(R.layout.activity_me_profit);
     }
 }

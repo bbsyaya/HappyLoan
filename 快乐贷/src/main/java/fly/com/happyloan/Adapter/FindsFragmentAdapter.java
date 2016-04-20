@@ -6,27 +6,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import fly.com.happyloan.R;
 
 /**
  * Created by WINPC on 2016/4/19.
  */
-public class FindsAdapter extends BaseAdapter {
+public class FindsFragmentAdapter extends BaseAdapter {
 
     ArrayList<HashMap<String,Object>> list = new ArrayList<>();
     Context context;
 
 
 
-    public FindsAdapter(ArrayList<HashMap<String,Object>> list,Context context){
+    public FindsFragmentAdapter(ArrayList<HashMap<String, Object>> list, Context context){
         this.list = list;
         this.context = context;
     }
@@ -57,7 +54,7 @@ public class FindsAdapter extends BaseAdapter {
         FindsView view =null;
         if (convertView ==null){
             view = new FindsView();
-            convertView = LayoutInflater.from(context).inflate(R.layout.simple_item,parent,false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.fragment_finds_list,parent,false);
             view.header = (ImageView) convertView.findViewById(R.id.header);
             view.name = (TextView) convertView.findViewById(R.id.name);
             view.desc = (TextView) convertView.findViewById(R.id.desc);

@@ -14,15 +14,15 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import fly.com.happyloan.Activity.Me_AboutActivity;
-import fly.com.happyloan.Activity.Me_BorrowComeActivity;
-import fly.com.happyloan.Activity.Me_BorrowOutActivity;
-import fly.com.happyloan.Activity.Me_MenoyActivity;
-import fly.com.happyloan.Activity.Me_ProfitActivity;
-import fly.com.happyloan.Activity.Me_SecuityActivity;
-import fly.com.happyloan.Activity.Me_SincereActivity;
+import fly.com.happyloan.Activity.Me.Me_AboutActivity;
+import fly.com.happyloan.Activity.Me.Me_BorrowComeActivity;
+import fly.com.happyloan.Activity.Me.Me_BorrowOutActivity;
+import fly.com.happyloan.Activity.Me.Me_MenoyActivity;
+import fly.com.happyloan.Activity.Me.Me_ProfitActivity;
+import fly.com.happyloan.Activity.Me.Me_SecuityActivity;
+import fly.com.happyloan.Activity.Me.Me_SincereActivity;
 import fly.com.happyloan.Adapter.MeFragmentAdapter;
-import fly.com.happyloan.Activity.Me_MainActivity;
+import fly.com.happyloan.Activity.MainActivity;
 import fly.com.happyloan.R;
 
 
@@ -52,7 +52,7 @@ public class MeFragment extends Fragment implements AdapterView.OnItemClickListe
         View view = inflater.inflate(R.layout.fragment_me, container, false);
         init();
         list_me = (ListView) view.findViewById(R.id.list_me);
-        Me_MainActivity mainActivity = (Me_MainActivity) getActivity();
+        MainActivity mainActivity = (MainActivity) getActivity();
         adapter = new MeFragmentAdapter(list,mainActivity);
         list_me.setAdapter(adapter);
         list_me.setOnItemClickListener(this);

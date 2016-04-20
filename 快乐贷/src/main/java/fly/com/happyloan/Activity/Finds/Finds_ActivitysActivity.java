@@ -1,15 +1,15 @@
-package fly.com.happyloan.Activity;
+package fly.com.happyloan.Activity.Finds;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import fly.com.happyloan.R;
 
-public class InvestmentActivity extends Activity {
+public class Finds_ActivitysActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_investment);
+        setContentView(R.layout.activity_finds_activitys);
     }
 }

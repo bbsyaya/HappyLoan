@@ -10,6 +10,6 @@ public class Me_SecuityActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_secuity);
+        setContentView(R.layout.activity_me_secuity);
     }
 }

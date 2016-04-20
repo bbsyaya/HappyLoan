@@ -10,6 +10,6 @@ public class Me_BorrowComeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_borrow_come);
+        setContentView(R.layout.activity_me_borrow_come);
     }
 }
