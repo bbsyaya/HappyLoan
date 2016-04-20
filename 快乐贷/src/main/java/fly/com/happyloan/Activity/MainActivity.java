@@ -1,12 +1,19 @@
-package fly.com.happyloan;
+package fly.com.happyloan.Activity;
+
+import android.support.v7.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.animation.Animation;
 import android.widget.FrameLayout;
@@ -20,11 +27,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import fly.com.happyloan.Fragment.FindsFragment;
 import fly.com.happyloan.Fragment.FriendsFragment;
 import fly.com.happyloan.Fragment.LoanFragment;
 import fly.com.happyloan.Fragment.MeFragment;
+import fly.com.happyloan.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,12 +59,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         findViewById();
         //碎片
         Fragment();
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        setActionBarLayout(R.layout.actionbar_me, this);
+        return true;
+    }
+
+    @SuppressLint("NewApi")
+    public void setActionBarLayout(int layoutId, Context context) {
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null){
+            actionBar.setDisplayShowHomeEnabled(false);
+            actionBar.setDisplayShowCustomEnabled(true);
+            actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+            LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View view = inflater.inflate(layoutId,new LinearLayout(context),false);
+            ActionBar.LayoutParams layout = new ActionBar.LayoutParams(
+                    ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
+            actionBar.setCustomView(view, layout);
+        }
+    }
+
     private void findViewById(){
         frame_content = (FrameLayout) findViewById(R.id.frame_content);
 
@@ -95,5 +129,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void setting(View view) {
+        Toast.makeText(MainActivity.this, "设置！", Toast.LENGTH_SHORT).show();
+    }
 
 }
