@@ -1,18 +1,20 @@
 package fly.com.happyloan.Activity;
 
+import android.support.v7.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import fly.com.happyloan.Fragment.FindsFragment;
@@ -21,7 +23,7 @@ import fly.com.happyloan.Fragment.LoanFragment;
 import fly.com.happyloan.Fragment.MeFragment;
 import fly.com.happyloan.R;
 
-public class Me_MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     FrameLayout frame_content;
     TextView tv_loan;
@@ -36,11 +38,12 @@ public class Me_MainActivity extends AppCompatActivity {
     FindsFragment finds_fragment;
     MeFragment me_fragment;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        getSupportActionBar().hide();
         findViewById();
         // 碎片
         Fragment();
@@ -112,7 +115,7 @@ public class Me_MainActivity extends AppCompatActivity {
     }
 
     public void setting(View view) {
-        Toast.makeText(Me_MainActivity.this, "设置！", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "设置！", Toast.LENGTH_SHORT).show();
     }
 
 }

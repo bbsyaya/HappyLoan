@@ -1,15 +1,15 @@
-package fly.com.happyloan.Activity;
+package fly.com.happyloan.Activity.Me;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import fly.com.happyloan.R;
 
-public class Me_AboutActivity extends Activity {
+public class Me_SecuityActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_secuity);
     }
 }
