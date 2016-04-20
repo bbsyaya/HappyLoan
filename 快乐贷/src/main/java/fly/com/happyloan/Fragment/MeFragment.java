@@ -40,7 +40,7 @@ public class MeFragment extends Fragment implements AdapterView.OnItemClickListe
             R.drawable.sincere,R.drawable.menoy,
             R.drawable.secuity,R.drawable.about};
     String[] title = {"借入","借出","赚利差","收还款","钱包","安全","关于"};
-    String[] menoy = {"0元","324元","345元","453元","542元","243元","654元"};
+    String[] money = {"100元","324元","25元","","充值、提现","",""};
     int[] greater = {R.drawable.greater,
             R.drawable.greater,R.drawable.greater,
             R.drawable.greater,R.drawable.greater,
@@ -65,7 +65,7 @@ public class MeFragment extends Fragment implements AdapterView.OnItemClickListe
             HashMap<String,Object> list_map = new HashMap<>();
             list_map.put("icon",icon[i]);
             list_map.put("borrow",title[i]);
-            list_map.put("menoy",menoy[i]);
+            list_map.put("money",money[i]);
             list_map.put("come",greater[i]);
             list.add(list_map);
         }

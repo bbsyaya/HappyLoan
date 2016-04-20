@@ -65,7 +65,7 @@ public class MeFragmentAdapter extends BaseAdapter{
         }
         holder.image_icon.setImageResource(Integer.parseInt(list.get(position).get("icon").toString()));
         holder.tv_borrow.setText(list.get(position).get("borrow").toString());
-        holder.tv_menoy.setText(list.get(position).get("menoy").toString());
+        holder.tv_menoy.setText(list.get(position).get("money").toString());
         holder.image_come.setImageResource(Integer.parseInt(list.get(position).get("come").toString()));
         return convertView;
     }
