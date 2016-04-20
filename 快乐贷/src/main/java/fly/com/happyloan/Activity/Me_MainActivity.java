@@ -21,7 +21,7 @@ import fly.com.happyloan.Fragment.LoanFragment;
 import fly.com.happyloan.Fragment.MeFragment;
 import fly.com.happyloan.R;
 
-public class MainActivity extends AppCompatActivity {
+public class Me_MainActivity extends AppCompatActivity {
 
     FrameLayout frame_content;
     TextView tv_loan;
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setting(View view) {
-        Toast.makeText(MainActivity.this, "设置！", Toast.LENGTH_SHORT).show();
+        Toast.makeText(Me_MainActivity.this, "设置！", Toast.LENGTH_SHORT).show();
     }
 
 }

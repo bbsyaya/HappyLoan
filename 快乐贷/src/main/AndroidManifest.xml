@@ -8,26 +8,26 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".Activity.MainActivity" >
+        <activity android:name=".Activity.Me_MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.AboutActivity" >
+        <activity android:name=".Activity.Me_AboutActivity" >
         </activity>
-        <activity android:name=".Activity.BorrowComeActivity" >
+        <activity android:name=".Activity.Me_BorrowComeActivity" >
         </activity>
-        <activity android:name=".Activity.BorrowOutActivity" >
+        <activity android:name=".Activity.Me_BorrowOutActivity" >
         </activity>
-        <activity android:name=".Activity.ProfitActivity" >
+        <activity android:name=".Activity.Me_ProfitActivity" >
         </activity>
-        <activity android:name=".Activity.SincereActivity" >
+        <activity android:name=".Activity.Me_SincereActivity" >
         </activity>
-        <activity android:name=".Activity.MenoyActivity" >
+        <activity android:name=".Activity.Me_MenoyActivity" >
         </activity>
-        <activity android:name=".Activity.SecuityActivity" >
+        <activity android:name=".Activity.Me_SecuityActivity" >
         </activity>
     </application>
 

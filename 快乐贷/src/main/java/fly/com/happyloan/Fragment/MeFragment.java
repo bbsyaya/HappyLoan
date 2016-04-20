@@ -14,15 +14,15 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import fly.com.happyloan.Activity.AboutActivity;
-import fly.com.happyloan.Activity.BorrowComeActivity;
-import fly.com.happyloan.Activity.BorrowOutActivity;
-import fly.com.happyloan.Activity.MenoyActivity;
-import fly.com.happyloan.Activity.ProfitActivity;
-import fly.com.happyloan.Activity.SecuityActivity;
-import fly.com.happyloan.Activity.SincereActivity;
+import fly.com.happyloan.Activity.Me_AboutActivity;
+import fly.com.happyloan.Activity.Me_BorrowComeActivity;
+import fly.com.happyloan.Activity.Me_BorrowOutActivity;
+import fly.com.happyloan.Activity.Me_MenoyActivity;
+import fly.com.happyloan.Activity.Me_ProfitActivity;
+import fly.com.happyloan.Activity.Me_SecuityActivity;
+import fly.com.happyloan.Activity.Me_SincereActivity;
 import fly.com.happyloan.Adapter.MeFragmentAdapter;
-import fly.com.happyloan.Activity.MainActivity;
+import fly.com.happyloan.Activity.Me_MainActivity;
 import fly.com.happyloan.R;
 
 
@@ -36,9 +36,9 @@ public class MeFragment extends Fragment implements AdapterView.OnItemClickListe
     MeFragmentAdapter adapter;
     ListView list_me;
     int[] icon = {R.drawable.borrow_come,
-            R.drawable.borrow_out,R.drawable.profit,
-            R.drawable.sincere,R.drawable.menoy,
-            R.drawable.secuity,R.drawable.about};
+            R.drawable.borrow_out,R.drawable.me_profit,
+            R.drawable.me_sincere,R.drawable.me_menoy,
+            R.drawable.me_secuity,R.drawable.me_about};
     String[] title = {"借入","借出","赚利差","收还款","钱包","安全","关于"};
     String[] money = {"100元","324元","25元","","充值、提现","",""};
     int[] greater = {R.drawable.greater,
@@ -52,7 +52,7 @@ public class MeFragment extends Fragment implements AdapterView.OnItemClickListe
         View view = inflater.inflate(R.layout.fragment_me, container, false);
         init();
         list_me = (ListView) view.findViewById(R.id.list_me);
-        MainActivity mainActivity = (MainActivity) getActivity();
+        Me_MainActivity mainActivity = (Me_MainActivity) getActivity();
         adapter = new MeFragmentAdapter(list,mainActivity);
         list_me.setAdapter(adapter);
         list_me.setOnItemClickListener(this);
@@ -76,25 +76,25 @@ public class MeFragment extends Fragment implements AdapterView.OnItemClickListe
         Toast.makeText(getContext(), "我是"+title[position], Toast.LENGTH_SHORT).show();
         switch (position){
             case 0:
-                startActivity(new Intent(getContext(),BorrowComeActivity.class));
+                startActivity(new Intent(getContext(),Me_BorrowComeActivity.class));
                 break;
             case 1:
-                startActivity(new Intent(getContext(),BorrowOutActivity.class));
+                startActivity(new Intent(getContext(),Me_BorrowOutActivity.class));
                 break;
             case 2:
-                startActivity(new Intent(getContext(),ProfitActivity.class));
+                startActivity(new Intent(getContext(),Me_ProfitActivity.class));
                 break;
             case 3:
-                startActivity(new Intent(getContext(),SincereActivity.class));
+                startActivity(new Intent(getContext(),Me_SincereActivity.class));
                 break;
             case 4:
-                startActivity(new Intent(getContext(),MenoyActivity.class));
+                startActivity(new Intent(getContext(),Me_MenoyActivity.class));
                 break;
             case 5:
-                startActivity(new Intent(getContext(),SecuityActivity.class));
+                startActivity(new Intent(getContext(),Me_SecuityActivity.class));
                 break;
             case 6:
-                startActivity(new Intent(getContext(),AboutActivity.class));
+                startActivity(new Intent(getContext(),Me_AboutActivity.class));
                 break;
         }
     }

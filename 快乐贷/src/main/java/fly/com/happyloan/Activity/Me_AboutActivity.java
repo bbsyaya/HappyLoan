@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import fly.com.happyloan.R;
 
-public class SecuityActivity extends Activity {
+public class Me_AboutActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_secuity);
+        setContentView(R.layout.activity_about);
     }
 }

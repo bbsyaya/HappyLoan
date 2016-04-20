@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import fly.com.happyloan.R;
 
-public class MenoyActivity extends Activity {
+public class Me_MenoyActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

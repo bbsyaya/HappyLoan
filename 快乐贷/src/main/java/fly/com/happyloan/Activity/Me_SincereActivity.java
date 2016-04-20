@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import fly.com.happyloan.R;
 
-public class SincereActivity extends Activity {
+public class Me_SincereActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
