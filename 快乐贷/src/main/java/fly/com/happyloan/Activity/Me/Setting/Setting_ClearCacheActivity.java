@@ -16,7 +16,7 @@ public class Setting_ClearCacheActivity extends AppCompatActivity {
     }
 
     public void clearCache(View view){
-        //清理缓存
+        //清理缓存(大小)
         Toast.makeText(Setting_ClearCacheActivity.this, "清理缓存!", Toast.LENGTH_SHORT).show();
     }
 
