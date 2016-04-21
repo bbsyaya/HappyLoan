@@ -51,6 +51,9 @@
         </activity>
         <activity android:name=".Activity.Me.Setting.Setting_ProblemActivity" >
         </activity>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_PersonalInfoActivity"/>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_AccountDetailsActivity"/>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_ScanActivity"/>
     </application>
 
 </manifest>
