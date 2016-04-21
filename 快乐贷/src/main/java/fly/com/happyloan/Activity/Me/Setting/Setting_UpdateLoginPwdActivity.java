@@ -18,6 +18,10 @@ public class Setting_UpdateLoginPwdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_update_login_pwd);
+        //
+        updateloginpwd_oldpwd = (EditText) findViewById(R.id.OldPwd);
+        updateloginpwd_newpwd = (EditText) findViewById(R.id.NewPwd);
+        updateloginpwd_againnewpwd = (EditText) findViewById(R.id.affirmPwd);
     }
 
     public void back(View view){

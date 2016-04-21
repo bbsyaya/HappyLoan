@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import fly.com.happyloan.Activity.Me.Me_AboutActivity;
-import fly.com.happyloan.Activity.Me.Me_BorrowComeActivity;
+import fly.com.happyloan.Activity.Me.BorrowCome.Me_BorrowComeActivity;
 import fly.com.happyloan.Activity.Me.Me_BorrowOutActivity;
 import fly.com.happyloan.Activity.Me.Me_MoneyActivity;
 import fly.com.happyloan.Activity.Me.Me_ProfitActivity;

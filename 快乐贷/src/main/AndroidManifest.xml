@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".Activity.Me.Me_AboutActivity" >
         </activity>
-        <activity android:name=".Activity.Me.Me_BorrowComeActivity" >
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" >
         </activity>
         <activity android:name=".Activity.Me.Me_BorrowOutActivity" >
         </activity>
@@ -50,6 +50,8 @@
         <activity android:name=".Activity.Me.Setting.Setting_FeedBackActivity" >
         </activity>
         <activity android:name=".Activity.Me.Setting.Setting_ProblemActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.Setting.Setting_Pay_FreePwdMoneyActivity" >
         </activity>
     </application>
 

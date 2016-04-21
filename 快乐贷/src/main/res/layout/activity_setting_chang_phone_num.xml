@@ -65,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="银行卡认证"
+        android:background="#eee"
         android:onClick="BankCard"
         android:layout_marginTop="10dp"/>
 

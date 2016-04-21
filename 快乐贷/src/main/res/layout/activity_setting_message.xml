@@ -32,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:id="@+id/me_message_newMessage"
@@ -50,6 +51,11 @@
             android:text="已关闭"/>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,6 +80,11 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
@@ -96,6 +107,11 @@
         android:layout_weight="1" />
 
 </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
 
     <LinearLayout
         android:layout_width="match_parent"
