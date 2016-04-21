@@ -53,6 +53,9 @@
         </activity>
         <activity android:name=".Activity.Me.Setting.Setting_Pay_FreePwdMoneyActivity" >
         </activity>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_PersonalInfoActivity"/>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_AccountDetailsActivity"/>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_ScanActivity"/>
     </application>
 
 </manifest>
