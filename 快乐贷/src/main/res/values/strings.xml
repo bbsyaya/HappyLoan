@@ -5,4 +5,7 @@
     <string name="friends">好友</string>
     <string name="loan">借贷</string>
 
+    <string name="me_scan">我的二维码</string>
+
+    <string name="login_out">退出登录</string>
 </resources>

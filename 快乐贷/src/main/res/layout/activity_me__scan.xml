@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_scan"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/me_info_scan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的二维码"
+            android:textColor="@color/color_actionbar_txt"
+            android:textSize="@dimen/actionbar_txt_size" />
+
+        <TextView
+            android:id="@+id/me_scan_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="扫一扫"
+            android:textSize="@dimen/actionbar_txt_size"
+            android:textColor="@color/color_actionbar_txt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/me_scan_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_head"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/me_scan_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/me_scan_head_image"
+            android:layout_toRightOf="@+id/me_scan_head_image"
+            android:layout_toEndOf="@+id/me_scan_head_image" />
+
+        <TextView
+            android:id="@+id/me_scan_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/me_scan_head_image"
+            android:layout_toRightOf="@+id/me_scan_head_image"
+            android:layout_toEndOf="@+id/me_scan_head_image" />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:id="@+id/me_scan_image"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loan_app_icon"/>
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/color_actionbar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按二维码添加到本地图片\n用快乐贷扫二维码，加我好友"
+            android:layout_alignBottom="@+id/me_scan_image"/>
+
+
+        <Button
+            android:id="@+id/me_scan_send"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorPrimary"
+            android:text="发送到QQ、微信，加好友"
+            android:layout_gravity="center"
+            android:textSize="@dimen/actionbar_txt_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayPublic_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/me_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的信息"
+            android:textColor="@color/color_actionbar_txt"
+            android:textSize="@dimen/actionbar_txt_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/me_personal_info_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_personal_me" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="账户详情"
+            android:textSize="@dimen/activity_me_txt_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/greater" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:id="@+id/me_info_scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_personal_scan" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/me_scan"
+            android:textSize="@dimen/activity_me_txt_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/greater" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/me_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/color_actionbar_txt"
+        android:background="@color/colorPrimary"
+        android:text="@string/login_out"
+        android:textSize="@dimen/activity_me_txt_size" />
+
+</LinearLayout>

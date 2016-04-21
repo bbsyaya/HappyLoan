@@ -8,4 +8,10 @@
 
     <color name="color_gb_false">#fff</color>
     <color name="color_gb_true">#FFB1F4E9</color>
+
+    <color name="color_actionbar_txt">#fff</color>
+
+    <color name="color_scan">#a19f9f</color>
+
+
 </resources>

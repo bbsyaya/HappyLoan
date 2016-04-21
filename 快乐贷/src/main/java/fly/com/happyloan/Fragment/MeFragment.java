@@ -18,6 +18,7 @@ import fly.com.happyloan.Activity.Me.Me_MoneyActivity;
 import fly.com.happyloan.Activity.Me.Me_ProfitActivity;
 import fly.com.happyloan.Activity.Me.Me_SecurityActivity;
 import fly.com.happyloan.Activity.Me.Me_SincereActivity;
+import fly.com.happyloan.Activity.Me.PersonalInfo.Me_PersonalInfoActivity;
 import fly.com.happyloan.Activity.Me.Setting.SettingActivity;
 import fly.com.happyloan.R;
 
@@ -27,6 +28,7 @@ import fly.com.happyloan.R;
  */
 public class MeFragment extends Fragment implements View.OnClickListener,View.OnTouchListener{
 
+    LinearLayout me_personal_info;
     LinearLayout me_borrow_come;
     LinearLayout me_borrow_out;
     LinearLayout me_profit;
@@ -48,6 +50,7 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
         //设置
         me_setting = (TextView)view.findViewById(R.id.me_setting);
         //每项的显示
+        me_personal_info = (LinearLayout) view.findViewById(R.id.me_personal_info);
         me_borrow_come = (LinearLayout) view.findViewById(R.id.me_borrow_come);
         me_borrow_out = (LinearLayout) view.findViewById(R.id.me_borrow_out);
         me_profit = (LinearLayout) view.findViewById(R.id.me_profit);
@@ -66,6 +69,9 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
         return view;
     }
     private void Listener(){
+
+        me_personal_info.setOnClickListener(this);
+
         me_borrow_come.setOnClickListener(this);
         me_borrow_come.setOnTouchListener(this);
 
@@ -92,6 +98,9 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
 
     private void startActivity(View v){
         switch (v.getId()){
+            case R.id.me_personal_info:
+                startActivity(new Intent(getContext(),Me_PersonalInfoActivity.class));
+                break;
             case R.id.me_borrow_come:
                 startActivity(new Intent(getContext(),Me_BorrowComeActivity.class));
                 break;
