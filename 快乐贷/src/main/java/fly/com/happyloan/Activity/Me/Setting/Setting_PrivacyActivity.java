@@ -24,6 +24,7 @@ public class Setting_PrivacyActivity extends AppCompatActivity {
     }
 
     public void back(View view){
+        //返回
         finish();
     }
 

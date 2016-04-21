@@ -33,6 +33,7 @@ public class Setting_PayActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void back(View view){
+        //返回
         finish();
     }
 

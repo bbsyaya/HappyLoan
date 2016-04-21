@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="金额小于100时，无需输入交易密码，暂时不包括借入借出，充值提现。"/>
+        android:text="金额小于100时，无需输入交易密码，暂时不包括借入借出，充值提现！"/>
 
 
 </LinearLayout>

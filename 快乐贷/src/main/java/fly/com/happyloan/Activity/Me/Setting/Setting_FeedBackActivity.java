@@ -37,6 +37,6 @@ public class Setting_FeedBackActivity extends AppCompatActivity implements View.
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(Setting_FeedBackActivity.this, "电话！", Toast.LENGTH_SHORT).show();
+        Toast.makeText(Setting_FeedBackActivity.this, "电话按钮！", Toast.LENGTH_SHORT).show();
     }
 }

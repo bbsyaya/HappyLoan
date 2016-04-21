@@ -59,6 +59,7 @@ public class Setting_Pay_FreePwdMoneyActivity extends AppCompatActivity implemen
     }
 
     public void back(View view){
+        //返回
         finish();
     }
 }

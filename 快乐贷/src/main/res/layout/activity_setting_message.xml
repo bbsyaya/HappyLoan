@@ -139,7 +139,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="若关闭，将不再接受以上任何功能的任何消息。"
+        android:text="若关闭，将不再接受以上任何功能的任何消息！"
         android:layout_marginTop="10dp"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"/>

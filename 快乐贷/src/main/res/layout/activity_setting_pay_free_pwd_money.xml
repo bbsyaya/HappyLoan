@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="免密金额"
+            android:text="免密金额大小"
             android:textColor="#fff"
             android:textSize="22sp" />
 

@@ -27,7 +27,7 @@ public class Setting_MessageActivity extends AppCompatActivity {
     }
 
     public void back(View view){
-        //返回
+        //返回按钮
         finish();
     }
 

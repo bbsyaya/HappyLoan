@@ -50,6 +50,7 @@ public class Setting_ProblemActivity extends AppCompatActivity implements Adapte
     }
 
     public void back(View view){
+        //返回
         finish();
     }
 
