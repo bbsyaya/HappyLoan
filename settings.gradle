@@ -1,1 +1,1 @@
-include ':快乐贷'
+include ':快乐贷','libzxing'
