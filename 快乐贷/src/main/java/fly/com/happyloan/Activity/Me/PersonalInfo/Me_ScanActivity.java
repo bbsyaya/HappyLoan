@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.xys.libzxing.zxing.activity.CaptureActivity;
+import com.xys.libzxing.zxing.encoding.EncodingUtils;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +42,7 @@ public class Me_ScanActivity extends AppCompatActivity implements View.OnClickLi
     }
     public void make(){
         String context = "二维码";
-        //bitmap = EncodingUtils.createQRCode(context,600,600,null);
+        bitmap = EncodingUtils.createQRCode(context, 600, 600, null);
         me_scan_image.setImageBitmap(bitmap);
     }
 
@@ -57,7 +60,7 @@ public class Me_ScanActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.me_scan_scan:
-                //startActivityForResult(new Intent(this, CaptureActivity.class), 99);
+                startActivityForResult(new Intent(this, CaptureActivity.class), 99);
                 break;
             case R.id.me_info_scan_back:
                 finish();
