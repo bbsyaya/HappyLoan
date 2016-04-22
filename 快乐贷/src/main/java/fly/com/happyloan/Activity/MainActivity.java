@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
     FindsFragment finds_fragment;
     MeFragment me_fragment;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void findViewById(){
+    private void findViewById() {
         frame_content = (FrameLayout) findViewById(R.id.frame_content);
 
         tv_loan = (TextView) findViewById(R.id.tv_loan);
@@ -51,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         tv_me = (TextView) findViewById(R.id.tv_me);
     }
 
-    private void Fragment(){
+    private void Fragment() {
         fm = getSupportFragmentManager();
 
         loan_fragment = new LoanFragment();
@@ -63,28 +61,28 @@ public class MainActivity extends AppCompatActivity {
         tv_loan.setSelected(true);
         tv_loan.setTextColor(Color.parseColor("#ff00bb9c"));
         ft = fm.beginTransaction();
-        ft.add(R.id.frame_content,loan_fragment);
+        ft.add(R.id.frame_content, loan_fragment);
         ft.commit();
     }
 
-    public void change(View v){
+    public void change(View v) {
         BottomMenu(v);
-        if (v.getId() == R.id.tv_loan){
+        if (v.getId() == R.id.tv_loan) {
 
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, loan_fragment);
             ft.commit();
-        }else if (v.getId() == R.id.tv_friends){
+        } else if (v.getId() == R.id.tv_friends) {
 
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, friends_fragment);
             ft.commit();
-        }else if (v.getId() ==R.id.tv_finds){
+        } else if (v.getId() == R.id.tv_finds) {
 
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, finds_fragment);
             ft.commit();
-        }else if (v.getId() == R.id.tv_me) {
+        } else if (v.getId() == R.id.tv_me) {
 
             ft = fm.beginTransaction();
             ft.replace(R.id.frame_content, me_fragment);
@@ -92,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void BottomMenu(View v){
-        if (v.getId() == R.id.tv_loan){
+    public void BottomMenu(View v) {
+        if (v.getId() == R.id.tv_loan) {
 
             tv_loan.setSelected(true);
             tv_friends.setSelected(false);
@@ -104,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             tv_finds.setTextColor(Color.parseColor("#000000"));
             tv_me.setTextColor(Color.parseColor("#000000"));
 
-        }else if (v.getId() == R.id.tv_friends){
+        } else if (v.getId() == R.id.tv_friends) {
 
             tv_loan.setSelected(false);
             tv_friends.setSelected(true);
@@ -115,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             tv_finds.setTextColor(Color.parseColor("#000000"));
             tv_me.setTextColor(Color.parseColor("#000000"));
 
-        }else if (v.getId() ==R.id.tv_finds){
+        } else if (v.getId() == R.id.tv_finds) {
 
             tv_loan.setSelected(false);
             tv_friends.setSelected(false);
@@ -126,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             tv_finds.setTextColor(Color.parseColor("#ff00bb9c"));
             tv_me.setTextColor(Color.parseColor("#000000"));
 
-        }else if (v.getId() == R.id.tv_me) {
+        } else if (v.getId() == R.id.tv_me) {
 
             tv_loan.setSelected(false);
             tv_friends.setSelected(false);

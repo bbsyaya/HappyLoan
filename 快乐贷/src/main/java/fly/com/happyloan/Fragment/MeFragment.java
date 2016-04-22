@@ -14,7 +14,7 @@ import android.widget.TextView;
 import fly.com.happyloan.Activity.Me.Me_AboutActivity;
 import fly.com.happyloan.Activity.Me.BorrowCome.Me_BorrowComeActivity;
 import fly.com.happyloan.Activity.Me.Me_BorrowOutActivity;
-import fly.com.happyloan.Activity.Me.Me_MoneyActivity;
+import fly.com.happyloan.Activity.Me.Wallet.Me_WalletActivity;
 import fly.com.happyloan.Activity.Me.Me_ProfitActivity;
 import fly.com.happyloan.Activity.Me.Me_SecurityActivity;
 import fly.com.happyloan.Activity.Me.Me_SincereActivity;
@@ -114,7 +114,7 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
                 startActivity(new Intent(getContext(),Me_SincereActivity.class));
                 break;
             case R.id.me_money:
-                startActivity(new Intent(getContext(),Me_MoneyActivity.class));
+                startActivity(new Intent(getContext(),Me_WalletActivity.class));
                 break;
             case R.id.me_security:
                 startActivity(new Intent(getContext(),Me_SecurityActivity.class));
