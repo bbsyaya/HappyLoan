@@ -19,14 +19,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".Activity.Me.Me_AboutActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Me_BorrowOutActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Me_ProfitActivity" >
         </activity>
         <activity android:name=".Activity.Me.Me_SincereActivity" >
         </activity>
@@ -79,6 +74,38 @@
         </activity>
         <activity android:name=".Activity.Me.Wallet.Bankcard_InformationActivity" >
         </activity>
+
+        <activity android:name=".Activity.Me.About.About_IntroduceActivity"/>
+        <activity android:name=".Activity.Me.About.About_PrivacyPolicyActivity"/>
+        <activity android:name=".Activity.Me.About.Privacy.About_ContactMeActivity"/>
+        <activity android:name=".Activity.Me.About.Privacy.About_PersonalMessageActivity"/>
+        <activity android:name=".Activity.Me.About.Privacy.About_SharePersonalMessageActivity"/>
+        <activity android:name=".Activity.Me.About.Privacy.About_Summarize_StatementActivity"/>
+        <activity android:name=".Activity.Me.About.Privacy.About_ThirdPartyActivity"/>
+        <activity android:name=".Activity.Me.About.Privacy.UsePersonalMessageActivity"/>
+
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowCome_BorrowCome_HistoryActivity"/>
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowCome_BorrowCome_InterestActivity"/>
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity"/>
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_HistoryActivity"/>
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_InterestActivity"/>
+        <activity android:name=".Activity.Finds.Urges.Find_Urges_Applyfor_TermActivity"/>
+        <activity android:name=".Activity.Finds.Finds_ActivitysActivity"/>
+        <activity android:name=".Activity.Finds.Finds_ContactsActivity"/>
+        <activity android:name=".Activity.Finds.Finds_NoticeActivity"/>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_Compile_FriendActivity"/>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_Me_MessagesActivity"/>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_MeActivity"/>
+        <activity android:name=".Activity.Finds.Reward.Finds_RewardActivity"/>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_CompileActivity"/>
+        <activity android:name=".Activity.Finds.Finds_SubscriptionActivity"/>
+        <activity android:name=".Activity.Finds.Urges.Finds_UrgesActivity"/>
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfitActivity"/>
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfit_GainProfit_HistoryActivity"/>
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfit_GainProfit_GainProfitIncomeActivity"/>
+
     </application>
 
 </manifest>
