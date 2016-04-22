@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 import fly.com.happyloan.Activity.Me.Me_AboutActivity;
 import fly.com.happyloan.Activity.Me.BorrowCome.Me_BorrowComeActivity;
-import fly.com.happyloan.Activity.Me.BorrowOut.Me_BorrowOutActivity;
+import fly.com.happyloan.Activity.Me.Me_BorrowOutActivity;
 import fly.com.happyloan.Activity.Me.Me_MoneyActivity;
-import fly.com.happyloan.Activity.Me.GainProfit.Me_GainProfitActivity;
+import fly.com.happyloan.Activity.Me.Me_ProfitActivity;
 import fly.com.happyloan.Activity.Me.Me_SecurityActivity;
-import fly.com.happyloan.Activity.Me.Sincere.Me_SincereActivity;
+import fly.com.happyloan.Activity.Me.Me_SincereActivity;
 import fly.com.happyloan.Activity.Me.PersonalInfo.Me_PersonalInfoActivity;
 import fly.com.happyloan.Activity.Me.Setting.SettingActivity;
 import fly.com.happyloan.R;
@@ -108,7 +108,7 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
                 startActivity(new Intent(getContext(),Me_BorrowOutActivity.class));
                 break;
             case R.id.me_profit:
-                startActivity(new Intent(getContext(),Me_GainProfitActivity.class));
+                startActivity(new Intent(getContext(),Me_ProfitActivity.class));
                 break;
             case R.id.me_sincere:
                 startActivity(new Intent(getContext(),Me_SincereActivity.class));

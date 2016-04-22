@@ -50,19 +50,26 @@
                     android:layout_height="80dp"
                     android:src="@drawable/default_head" />
 
+                <TextView
+                    android:id="@+id/me_nickname"
+                    android:text="昵称"
+                    android:textSize="@dimen/activity_me_txt_size"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
                 <ImageView
                     android:id="@+id/scan"
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="220dp"
-                    android:layout_marginTop="30dp"
                     android:src="@drawable/me_code" />
 
                 <ImageView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="30dp"
                     android:src="@drawable/greater" />
 
             </LinearLayout>
@@ -96,6 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0元"
+                    android:textColor="@color/color_money"
                     android:textSize="@dimen/activity_me_txt_size" />
 
                 <ImageView
@@ -136,6 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0元"
+                    android:textColor="@color/color_money"
                     android:textSize="@dimen/activity_me_txt_size" />
 
                 <ImageView
@@ -176,6 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0元"
+                    android:textColor="@color/color_money"
                     android:textSize="@dimen/activity_me_txt_size" />
 
                 <ImageView

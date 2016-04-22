@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayPublic_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="Back"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="身份信息"
+            android:textColor="@color/color_actionbar_txt"
+            android:textSize="@dimen/actionbar_txt_size" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/me_authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="完成身份验证，可核对真实身份，保障合法权益"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/color_default_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:text="真实姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/me_authentication_name"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:text="名字"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/color_default_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:text="身份证"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/me_id_card"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:text="4****************2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="Validate"
+        android:layout_marginTop="30dp"
+        android:text="开始验证"
+        android:textSize="@dimen/activity_me_txt_size"
+        android:textColor="@color/color_default_bg"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

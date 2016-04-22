@@ -13,5 +13,7 @@
 
     <color name="color_scan">#a19f9f</color>
 
+    <color name="color_default_bg">#fff</color>
 
+    <color name="color_money">#FF0DCE2D</color>
 </resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayPublic_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:onClick="Back"
+            android:clickable="true"
+            android:text="关闭"
+            android:textSize="@dimen/actionbar_txt_size"
+            android:textColor="@color/color_default_bg"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="关联银行卡"
+            android:textColor="@color/color_actionbar_txt"
+            android:textSize="@dimen/actionbar_txt_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="请绑定持卡人本人的银行卡"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/color_default_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="持卡人"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/me_bank_name"
+            android:layout_gravity="center"
+            android:text="欧阳"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:onClick="Warn"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/me_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/color_default_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="卡号"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_me_txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/me_bankcard_number"
+            android:layout_gravity="center"
+            android:hint="银行卡号"
+            android:maxLength="19"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="快乐贷智能加密，保障你的用卡安全"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="Next"
+        android:layout_marginTop="20dp"
+        android:text="下一步"
+        android:textSize="@dimen/activity_me_txt_size"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color_default_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

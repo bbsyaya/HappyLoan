@@ -1,5 +1,6 @@
 package fly.com.happyloan.Activity.Me.PersonalInfo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -15,7 +16,6 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
     LinearLayout me_account_head_linear;
     LinearLayout me_account_nickname_linear;
     LinearLayout me_account_signature_linear;
-    LinearLayout me_account_phone_linear;
     LinearLayout me_account_identity_linear;
 
     ImageView me_account_head_image;
@@ -36,7 +36,6 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
         me_account_head_linear = (LinearLayout) findViewById(R.id.me_account_head_linear);
         me_account_nickname_linear = (LinearLayout) findViewById(R.id.me_account_nickname_linear);
         me_account_signature_linear = (LinearLayout) findViewById(R.id.me_account_signature_linear);
-        me_account_phone_linear = (LinearLayout) findViewById(R.id.me_account_phone_linear);
         me_account_identity_linear = (LinearLayout) findViewById(R.id.me_account_identity_linear);
 
         me_account_head_image = (ImageView) findViewById(R.id.me_account_head_image);
@@ -55,9 +54,6 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
 
         me_account_signature_linear.setOnTouchListener(this);
         me_account_signature_linear.setOnClickListener(this);
-
-        me_account_phone_linear.setOnTouchListener(this);
-        me_account_phone_linear.setOnClickListener(this);
 
         me_account_identity_linear.setOnTouchListener(this);
         me_account_identity_linear.setOnClickListener(this);
@@ -84,9 +80,6 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
                     case R.id.me_account_signature_linear:
                         me_account_signature_linear.setSelected(true);
                         break;
-                    case R.id.me_account_phone_linear:
-                        me_account_phone_linear.setSelected(true);
-                        break;
                     case R.id.me_account_identity_linear:
                         me_account_identity_linear.setSelected(true);
                         break;
@@ -97,7 +90,6 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
                 me_account_head_linear.setSelected(false);
                 me_account_nickname_linear.setSelected(false);
                 me_account_signature_linear.setSelected(false);
-                me_account_phone_linear.setSelected(false);
                 me_account_identity_linear.setSelected(false);
 
                 onClick(v);
@@ -110,18 +102,21 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
     public void onClick(View v) {
         startActivity(v);
     }
+
     private void startActivity(View v){
-        /*switch (v.getId()){
+        switch (v.getId()){
             case R.id.me_account_head_linear:
+                startActivity(new Intent(this,Me_SettingHeadActivity.class));
                 break;
             case R.id.me_account_nickname_linear:
+                startActivity(new Intent(this,Me_NicknameActivity.class));
                 break;
             case R.id.me_account_signature_linear:
-                break;
-            case R.id.me_account_phone_linear:
+                startActivity(new Intent(this,Me_SignatureActivity.class));
                 break;
             case R.id.me_account_identity_linear:
+                startActivity(new Intent(this,Me_IdentityActivity.class));
                 break;
-        }*/
+        }
     }
 }

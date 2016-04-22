@@ -35,10 +35,10 @@ public class Me_ScanActivity extends AppCompatActivity implements View.OnClickLi
         me_scan_image = (ImageView) findViewById(R.id.me_scan_image);
         me_info_scan_back = (ImageView) findViewById(R.id.me_info_scan_back);
 
+        make();
         me_scan_scan.setOnClickListener(this);
         me_info_scan_back.setOnClickListener(this);
         me_scan_image.setOnLongClickListener(this);
-        make();
     }
     public void make(){
         String context = "二维码";
