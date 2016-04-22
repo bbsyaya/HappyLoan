@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="利润差"
+                    android:text="赚利差"
                     android:textSize="@dimen/activity_me_txt_size" />
 
                 <TextView

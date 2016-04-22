@@ -5,31 +5,34 @@
     android:orientation="vertical"
     android:background="@color/colorGrayPublic_background">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal">
+        android:background="@color/colorPrimary">
 
         <ImageView
+            android:onClick="back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
-            android:gravity="center"
-            android:onClick="back"
             android:src="@drawable/back" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:gravity="center"
             android:text="借入利息"
-            android:textColor="@color/color_gb_false"
-            android:textSize="22sp"
-            android:layout_weight="1"/>
+            android:textColor="@color/color_actionbar_txt"
+            android:textSize="@dimen/actionbar_txt_size" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

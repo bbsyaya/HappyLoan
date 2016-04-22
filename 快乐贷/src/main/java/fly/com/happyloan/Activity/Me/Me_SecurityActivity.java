@@ -2,6 +2,7 @@ package fly.com.happyloan.Activity.Me;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 import fly.com.happyloan.R;
 
@@ -12,4 +13,9 @@ public class Me_SecurityActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me_secuity);
     }
+
+    public void back(View view){
+        finish();
+    }
+
 }

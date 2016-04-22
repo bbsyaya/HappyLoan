@@ -19,11 +19,11 @@
         </activity>
         <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" >
         </activity>
-        <activity android:name=".Activity.Me.Me_BorrowOutActivity" >
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity" >
         </activity>
-        <activity android:name=".Activity.Me.Me_ProfitActivity" >
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfitActivity" >
         </activity>
-        <activity android:name=".Activity.Me.Me_SincereActivity" >
+        <activity android:name=".Activity.Me.Sincere.Me_SincereActivity" >
         </activity>
         <activity android:name=".Activity.Me.Me_MoneyActivity" >
         </activity>
@@ -53,9 +53,33 @@
         </activity>
         <activity android:name=".Activity.Me.Setting.Setting_Pay_FreePwdMoneyActivity" >
         </activity>
-        <activity android:name=".Activity.Me.PersonalInfo.Me_PersonalInfoActivity"/>
-        <activity android:name=".Activity.Me.PersonalInfo.Me_AccountDetailsActivity"/>
-        <activity android:name=".Activity.Me.PersonalInfo.Me_ScanActivity"/>
+        <activity android:name=".Activity.Me.PersonalInfo.Me_PersonalInfoActivity" />
+        <activity android:name=".Activity.Me.PersonalInfo.Me_AccountDetailsActivity" />
+        <activity android:name=".Activity.Me.PersonalInfo.Me_ScanActivity" />
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_HistoryActivity" />
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_InterestActivity" />
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowCome_BorrowCome_InterestActivity" />
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowCome_BorrowCome_HistoryActivity" />
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfit_GainProfit_HistoryActivity" >
+        </activity>
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfit_GainProfit_GainProfitIncomeActivity" >
+        </activity>
+        <activity android:name=".Activity.Finds.Reward.Finds_RewardActivity" />
+        <activity android:name=".Activity.Finds.Finds_ContactsActivity" />
+        <activity android:name=".Activity.Finds.Finds_ActivitysActivity" />
+        <activity android:name=".Activity.Finds.Finds_NoticeActivity" />
+        <activity android:name=".Activity.Finds.Finds_SubscriptionActivity" />
+        <activity android:name=".Activity.Finds.Urges.Finds_UrgesActivity" />
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_MeActivity" >
+        </activity>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_Me_MessagesActivity" >
+        </activity>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_CompileActivity" >
+        </activity>
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_Compile_FriendActivity" >
+        </activity>
+        <activity android:name=".Activity.Finds.Urges.Find_Urges_Applyfor_TermActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -30,7 +30,7 @@ public class Me_ScanActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_me__scan);
+        setContentView(R.layout.activity_me_scan);
         me_scan_scan = (TextView) findViewById(R.id.me_scan_scan);
         me_scan_image = (ImageView) findViewById(R.id.me_scan_image);
         me_info_scan_back = (ImageView) findViewById(R.id.me_info_scan_back);
