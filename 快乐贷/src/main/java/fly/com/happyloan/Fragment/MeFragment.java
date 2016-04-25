@@ -11,14 +11,14 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import fly.com.happyloan.Activity.Me.BorrowCome.Me_BorrowComeActivity;
 import fly.com.happyloan.Activity.Me.BorrowOut.Me_BorrowOutActivity;
 import fly.com.happyloan.Activity.Me.GainProfit.Me_GainProfitActivity;
 import fly.com.happyloan.Activity.Me.Me_AboutActivity;
-import fly.com.happyloan.Activity.Me.BorrowCome.Me_BorrowComeActivity;
 import fly.com.happyloan.Activity.Me.Me_SecurityActivity;
+import fly.com.happyloan.Activity.Me.Me_SincereActivity;
 import fly.com.happyloan.Activity.Me.PersonalInfo.Me_PersonalInfoActivity;
 import fly.com.happyloan.Activity.Me.Setting.SettingActivity;
-import fly.com.happyloan.Activity.Me.Sincere.Me_SincereActivity;
 import fly.com.happyloan.Activity.Me.Wallet.Me_WalletActivity;
 import fly.com.happyloan.R;
 
