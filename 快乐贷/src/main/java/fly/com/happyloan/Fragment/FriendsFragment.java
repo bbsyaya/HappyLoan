@@ -21,9 +21,6 @@ public class FriendsFragment extends Fragment {
 
     ArrayList<String> list = new ArrayList<>();
     ArrayAdapter adapter;
-    public FriendsFragment() {
-        // Required empty public constructor
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

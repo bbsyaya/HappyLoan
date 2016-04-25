@@ -1,5 +1,11 @@
 package fly.com.happyloan.Activity.Me.Setting;
 
+import android.Manifest;
+import android.annotation.TargetApi;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,20 +29,24 @@ public class Setting_FeedBackActivity extends AppCompatActivity implements View.
         listener();
     }
 
-    public void submit(View view){
+    public void submit(View view) {
         Toast.makeText(Setting_FeedBackActivity.this, "提交按钮！", Toast.LENGTH_SHORT).show();
     }
 
-    public void back(View view){
+    public void back(View view) {
         finish();
     }
 
-    public void listener(){
+    public void listener() {
         me_setting_feedback_phone.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         Toast.makeText(Setting_FeedBackActivity.this, "电话按钮！", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:15616164863"));
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
     }
 }

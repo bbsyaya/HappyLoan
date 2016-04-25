@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:background="@color/colorGrayPublic_background"
     android:orientation="vertical">
 
@@ -9,47 +9,35 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
-        android:orientation="horizontal"
         android:padding="10dp">
-
         <ImageView
-            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:onClick="back"
             android:src="@drawable/back"
+            android:onClick="back"
+            android:clickable="true"
+            android:id="@+id/back"
             android:layout_alignBottom="@+id/ab1"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
-
         <TextView
-            android:id="@+id/ab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="关于我们"
+            android:text="快乐贷隐私权政策"
             android:textColor="#fff"
             android:textSize="24sp"
+            android:id="@+id/ab1"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 
-    <ImageView
-        android:layout_marginTop="20dp"
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="160dp"
-        android:layout_gravity="center"
-        android:src="@drawable/loan_app_icon" />
 
     <ListView
+        android:background="@color/color_gb_false"
         android:layout_marginTop="20dp"
-        android:id="@+id/me_about_listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_privacy_policy_list"
         android:layout_gravity="center_horizontal" />
-
-
 </LinearLayout>
