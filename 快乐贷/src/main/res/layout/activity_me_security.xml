@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/colorPrimary"
-        android:padding="10dp">
+        android:background="@color/colorPrimary">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
             android:onClick="back"
             android:clickable="true"
             android:id="@+id/back"
-            android:layout_alignBottom="@+id/ab1"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
         <TextView
@@ -26,21 +26,10 @@
             android:layout_height="wrap_content"
             android:text="账号保护"
             android:textColor="#f4f3f3"
-            android:textSize="24sp"
+            android:textSize="@dimen/actionbar_txt_size"
             android:id="@+id/ab1"
-            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="编辑"
-            android:textColor="@color/color_gb_false"
-            android:textSize="24sp"
-            android:id="@+id/me_security_edit"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 
@@ -49,6 +38,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:background="@color/color_gb_false"
             android:orientation="horizontal">
 
@@ -57,14 +47,13 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="账号保护"
-                android:textSize="20dp"
-                android:padding="15dp"/>
+                android:textSize="18dp"
+                android:padding="10dp"/>
 
             <Switch
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="160dp"
                 android:textOff="关闭"
                 android:textOn="打开"
                 android:checked="true"

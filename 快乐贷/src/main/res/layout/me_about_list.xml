@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:text="名字"
         android:id="@+id/tv_names"
-        android:textSize="22dp"/>
+        android:textSize="20dp"/>
 
     <ImageView
         android:layout_width="wrap_content"

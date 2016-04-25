@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/mode_noe"
+            android:title="单列" />
+
+        <item
+            android:id="@+id/mode_two"
+            android:title="双列" />
+
+        <item
+            android:id="@+id/mode_three"
+            android:title="三列" />
+
+    </group>
+
+</menu>

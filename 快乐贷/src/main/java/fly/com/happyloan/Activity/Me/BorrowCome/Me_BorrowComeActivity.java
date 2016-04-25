@@ -1,6 +1,7 @@
 package fly.com.happyloan.Activity.Me.BorrowCome;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -36,11 +37,16 @@ public class Me_BorrowComeActivity extends Activity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.borrowCom_history:
+                startActivity(new Intent(this,Me_BorrowCome_BorrowCome_HistoryActivity.class));
                 Toast.makeText(Me_BorrowComeActivity.this, "历史记录", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.me_borrowCome_interest:
+                startActivity(new Intent(this,Me_BorrowCome_BorrowCome_InterestActivity.class));
                 Toast.makeText(Me_BorrowComeActivity.this, "利息支出总额", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+    public void back(View view){
+        finish();
     }
 }

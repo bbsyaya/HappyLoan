@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import fly.com.happyloan.Activity.Finds.Finds_ActivitysActivity;
+import fly.com.happyloan.Activity.Finds.Activity.Finds_ActivitysActivity;
 import fly.com.happyloan.Activity.Finds.Finds_ContactsActivity;
 import fly.com.happyloan.Activity.Finds.Finds_NoticeActivity;
 import fly.com.happyloan.Activity.Finds.Reward.Finds_RewardActivity;

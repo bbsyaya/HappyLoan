@@ -7,8 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        android:padding="10dp">
+        android:background="@color/colorPrimary">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -16,7 +15,7 @@
             android:onClick="back"
             android:clickable="true"
             android:id="@+id/back"
-            android:layout_alignBottom="@+id/ab1"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
         <TextView
@@ -24,9 +23,9 @@
             android:layout_height="wrap_content"
             android:text="分享个人信息"
             android:textColor="#fff"
-            android:textSize="24sp"
+            android:textSize="@dimen/actionbar_txt_size"
             android:id="@+id/ab1"
-            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
