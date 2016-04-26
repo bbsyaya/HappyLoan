@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:text="借款"
             android:textColor="@color/color_gb_false"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
+            android:textSize="@dimen/actionbar_txt_size"
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />>
 
     </RelativeLayout>

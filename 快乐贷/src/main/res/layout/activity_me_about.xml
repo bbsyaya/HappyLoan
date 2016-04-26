@@ -19,7 +19,7 @@
             android:clickable="true"
             android:onClick="back"
             android:src="@drawable/back"
-            android:layout_alignBottom="@+id/ab1"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -30,8 +30,8 @@
             android:layout_weight="1"
             android:text="关于我们"
             android:textColor="#fff"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
+            android:textSize="@dimen/actionbar_txt_size"
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
     </RelativeLayout>

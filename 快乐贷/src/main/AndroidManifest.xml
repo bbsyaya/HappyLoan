@@ -2,15 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fly.com.happyloan" >
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
+        android:name=".Util.App"
         android:allowBackup="true"
         android:icon="@drawable/loan_app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".Activity.MainActivity" >
+        <activity
+            android:name=".Activity.MainActivity"
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +31,6 @@
         <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" />
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity" />
         <activity android:name=".Activity.Me.GainProfit.Me_GainProfitActivity" />
-        <activity android:name=".Activity.Me.Sincere.Me_SincereActivity" />
         <activity android:name=".Activity.Me.Wallet.Me_WalletActivity" />
         <activity android:name=".Activity.Me.Me_SecurityActivity" />
         <activity android:name=".Activity.Me.Setting.SettingActivity" />
@@ -44,7 +53,6 @@
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_HistoryActivity" />
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_InterestActivity" />
         <activity android:name=".Activity.Finds.Urges.Find_Urges_Applyfor_TermActivity" />
-        <activity android:name=".Activity.Finds.Finds_ActivitysActivity" />
         <activity android:name=".Activity.Finds.Finds_ContactsActivity" />
         <activity android:name=".Activity.Finds.Finds_NoticeActivity" />
         <activity android:name=".Activity.Finds.Reward.Finds_Reward_Compile_FriendActivity" />
@@ -72,8 +80,6 @@
         <activity android:name=".Activity.Me.PersonalInfo.Me_SettingHeadActivity" />
         <activity android:name=".Activity.Me.PersonalInfo.Me_IdentityActivity" />
         <activity android:name=".Activity.Me.PersonalInfo.Me_NicknameActivity" />
-        <activity android:name=".Activity.Me.PersonalInfo.Me_PersonalInfoActivity" />
-        <activity android:name=".Activity.Me.PersonalInfo.Me_ScanActivity" />
         <activity android:name=".Activity.Me.PersonalInfo.Me_SignatureActivity" />
         <activity android:name=".Activity.Loan.Loan_KnockdownActivity" >
         </activity>
@@ -87,6 +93,11 @@
         </activity>
         <activity android:name=".Activity.Loan.Loan_ListVIew_GainInterestActivity" >
         </activity>
+        <activity android:name=".Activity.Finds.Activity.Finds_Activity_DetailsActivity"/>
+        <activity android:name=".Activity.Finds.Activity.Finds_ActivitysActivity"/>
+        <activity android:name=".Activity.Finds.Activity.Finds_EditActivity"/>
+        <activity android:name=".Activity.Login.LoginActivity"/>
+        <activity android:name=".Activity.Login.RegisterActivity"/>
     </application>
 
 </manifest>
