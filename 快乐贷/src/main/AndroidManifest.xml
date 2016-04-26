@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".Activity.Login.LoginActivity"
             android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.MainActivity"/>
         <activity android:name=".Activity.Me.Me_AboutActivity" />
         <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" />
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity" />
@@ -96,7 +97,6 @@
         <activity android:name=".Activity.Finds.Activity.Finds_Activity_DetailsActivity"/>
         <activity android:name=".Activity.Finds.Activity.Finds_ActivitysActivity"/>
         <activity android:name=".Activity.Finds.Activity.Finds_EditActivity"/>
-        <activity android:name=".Activity.Login.LoginActivity"/>
         <activity android:name=".Activity.Login.RegisterActivity"/>
     </application>
 
