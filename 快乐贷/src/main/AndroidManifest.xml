@@ -27,76 +27,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.Me.Me_AboutActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Me_SincereActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Wallet.Me_WalletActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Me_SecurityActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.SettingActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_UpdateLoginPwdActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_UpdateTradePwdActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_GestureActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_ChangePhoneNumActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_PayActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_MessageActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_PrivacyActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_ClearCacheActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_FeedBackActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_ProblemActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Setting.Setting_Pay_FreePwdMoneyActivity" >
-        </activity>
+        <activity android:name=".Activity.Me.Me_AboutActivity" />
+        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" />
+        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity" />
+        <activity android:name=".Activity.Me.GainProfit.Me_GainProfitActivity" />
+        <activity android:name=".Activity.Me.Wallet.Me_WalletActivity" />
+        <activity android:name=".Activity.Me.Me_SecurityActivity" />
+        <activity android:name=".Activity.Me.Setting.SettingActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_UpdateLoginPwdActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_UpdateTradePwdActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_GestureActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_ChangePhoneNumActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_PayActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_MessageActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_PrivacyActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_ClearCacheActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_FeedBackActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_ProblemActivity" />
+        <activity android:name=".Activity.Me.Setting.Setting_Pay_FreePwdMoneyActivity" />
         <activity android:name=".Activity.Me.PersonalInfo.Me_PersonalInfoActivity" />
         <activity android:name=".Activity.Me.PersonalInfo.Me_AccountDetailsActivity" />
         <activity android:name=".Activity.Me.PersonalInfo.Me_ScanActivity" />
-        <activity android:name=".Activity.Me.PersonalInfo.Me_SettingHeadActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.PersonalInfo.Me_NicknameActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.PersonalInfo.Me_SignatureActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.PersonalInfo.Me_IdentityActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Wallet.Wallet_PaymentsActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Wallet.Wallet_RechargeActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Wallet.Wallet_WithdrawActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Wallet.Wallet_Add_BankcardActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.Wallet.Bankcard_InformationActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.About.About_IntroduceActivity" />
-        <activity android:name=".Activity.Me.About.About_PrivacyPolicyActivity" />
-        <activity android:name=".Activity.Me.About.Privacy.About_ContactMeActivity" />
-        <activity android:name=".Activity.Me.About.Privacy.About_PersonalMessageActivity" />
-        <activity android:name=".Activity.Me.About.Privacy.About_SharePersonalMessageActivity" />
-        <activity android:name=".Activity.Me.About.Privacy.About_Summarize_StatementActivity" />
-        <activity android:name=".Activity.Me.About.Privacy.About_ThirdPartyActivity" />
-        <activity android:name=".Activity.Me.About.Privacy.UsePersonalMessageActivity" />
         <activity android:name=".Activity.Me.BorrowCome.Me_BorrowCome_BorrowCome_HistoryActivity" />
         <activity android:name=".Activity.Me.BorrowCome.Me_BorrowCome_BorrowCome_InterestActivity" />
-        <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" >
-        </activity>
-        <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity" />
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_HistoryActivity" />
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOut_BorrowOut_InterestActivity" />
         <activity android:name=".Activity.Finds.Urges.Find_Urges_Applyfor_TermActivity" />
-        <activity android:name=".Activity.Finds.Activity.Finds_ActivitysActivity" />
         <activity android:name=".Activity.Finds.Finds_ContactsActivity" />
         <activity android:name=".Activity.Finds.Finds_NoticeActivity" />
         <activity android:name=".Activity.Finds.Reward.Finds_Reward_Compile_FriendActivity" />
@@ -106,18 +62,42 @@
         <activity android:name=".Activity.Finds.Reward.Finds_Reward_CompileActivity" />
         <activity android:name=".Activity.Finds.Finds_SubscriptionActivity" />
         <activity android:name=".Activity.Finds.Urges.Finds_UrgesActivity" />
-        <activity android:name=".Activity.Me.GainProfit.Me_GainProfitActivity" />
         <activity android:name=".Activity.Me.GainProfit.Me_GainProfit_GainProfit_HistoryActivity" />
         <activity android:name=".Activity.Me.GainProfit.Me_GainProfit_GainProfit_GainProfitIncomeActivity" />
-        <activity android:name=".Activity.Finds.Activity.Finds_Activity_DetailsActivity" >
+        <activity android:name=".Activity.Me.About.About_IntroduceActivity" />
+        <activity android:name=".Activity.Me.About.About_PrivacyPolicyActivity" />
+        <activity android:name=".Activity.Me.About.Privacy.About_ContactMeActivity" />
+        <activity android:name=".Activity.Me.About.Privacy.About_PersonalMessageActivity" />
+        <activity android:name=".Activity.Me.About.Privacy.About_SharePersonalMessageActivity" />
+        <activity android:name=".Activity.Me.About.Privacy.About_Summarize_StatementActivity" />
+        <activity android:name=".Activity.Me.About.Privacy.About_ThirdPartyActivity" />
+        <activity android:name=".Activity.Me.About.Privacy.UsePersonalMessageActivity" />
+        <activity android:name=".Activity.Me.Wallet.Wallet_Add_BankcardActivity" />
+        <activity android:name=".Activity.Me.Wallet.Wallet_PaymentsActivity" />
+        <activity android:name=".Activity.Me.Wallet.Wallet_RechargeActivity" />
+        <activity android:name=".Activity.Me.Wallet.Wallet_WithdrawActivity" />
+        <activity android:name=".Activity.Me.Wallet.Bankcard_InformationActivity" />
+        <activity android:name=".Activity.Me.PersonalInfo.Me_SettingHeadActivity" />
+        <activity android:name=".Activity.Me.PersonalInfo.Me_IdentityActivity" />
+        <activity android:name=".Activity.Me.PersonalInfo.Me_NicknameActivity" />
+        <activity android:name=".Activity.Me.PersonalInfo.Me_SignatureActivity" />
+        <activity android:name=".Activity.Loan.Loan_KnockdownActivity" >
         </activity>
-        <activity android:name=".Activity.Finds.Activity.Finds_EditActivity" >
+        <activity android:name=".Activity.Loan.Loan_BorrowMoneyActivity" >
         </activity>
-        <activity android:name=".Activity.Login.RegisterActivity" >
+        <activity android:name=".Activity.Loan.Loan_BorrowMoney_FriendActivity" >
         </activity>
-        <activity
-            android:name=".Activity.Login.LoginActivity" >
+        <activity android:name=".Activity.Loan.Loan_BorrowMoney_AboutBorrowMoneyActivity" >
         </activity>
+        <activity android:name=".Activity.Loan.Loan_ListViewActivity" >
+        </activity>
+        <activity android:name=".Activity.Loan.Loan_ListVIew_GainInterestActivity" >
+        </activity>
+        <activity android:name=".Activity.Finds.Activity.Finds_Activity_DetailsActivity"/>
+        <activity android:name=".Activity.Finds.Activity.Finds_ActivitysActivity"/>
+        <activity android:name=".Activity.Finds.Activity.Finds_EditActivity"/>
+        <activity android:name=".Activity.Login.LoginActivity"/>
+        <activity android:name=".Activity.Login.RegisterActivity"/>
     </application>
 
 </manifest>
