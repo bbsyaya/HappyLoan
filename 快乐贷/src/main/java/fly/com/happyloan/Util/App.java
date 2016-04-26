@@ -8,6 +8,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
+import cn.bmob.v3.Bmob;
 import fly.com.happyloan.R;
 
 /**
@@ -18,6 +19,8 @@ public class App extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+
+        Bmob.initialize(this,"8a662201b73fcd20c4a26fe1dddc2ec1");
 
         @SuppressWarnings("deprecation")
         DisplayImageOptions options = new DisplayImageOptions.Builder()
