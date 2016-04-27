@@ -87,6 +87,7 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
+                    android:maxLength="16"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>

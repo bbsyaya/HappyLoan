@@ -9,6 +9,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
+import cn.bmob.v3.BmobUser;
+import fly.com.happyloan.Object.Happy_user;
 import fly.com.happyloan.R;
 
 public class Me_AccountDetailsActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
@@ -24,6 +28,8 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
     TextView me_account_Email;
     TextView me_account_phone;
     TextView me_account_identity;
+
+    Happy_user user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +50,24 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
         me_account_Email = (TextView) findViewById(R.id.me_account_Email);
         me_account_phone = (TextView) findViewById(R.id.me_account_phone);
         me_account_identity = (TextView) findViewById(R.id.me_account_identity);
+
+        initDate();
     }
+
+    private void initDate(){
+
+        user = BmobUser.getCurrentUser(this,Happy_user.class);
+        String image_url = user.getHeadImage().getUrl();
+        ImageLoader.getInstance().displayImage(image_url,me_account_head_image);
+
+        me_account_nickname.setText(user.getNickname());
+        me_account_signature.setText(user.getSignature());
+        me_account_Email.setText(user.getEmail());
+        me_account_phone.setText(user.getUsername());
+        me_account_identity.setText(user.getName());
+
+    }
+
     private void Listener(){
         me_account_head_linear.setOnTouchListener(this);
         me_account_head_linear.setOnClickListener(this);
@@ -104,18 +127,28 @@ public class Me_AccountDetailsActivity extends AppCompatActivity implements View
     }
 
     private void startActivity(View v){
+
+        Intent intent;
         switch (v.getId()){
             case R.id.me_account_head_linear:
-                startActivity(new Intent(this,Me_SettingHeadActivity.class));
+                intent = new Intent(this,Me_SettingHeadActivity.class);
+                startActivity(intent);
                 break;
             case R.id.me_account_nickname_linear:
-                startActivity(new Intent(this,Me_NicknameActivity.class));
+                intent = new Intent(this,Me_NicknameActivity.class);
+                intent.putExtra("nickname", me_account_nickname.getText());
+                startActivity(intent);
                 break;
             case R.id.me_account_signature_linear:
-                startActivity(new Intent(this,Me_SignatureActivity.class));
+                intent = new Intent(this,Me_SignatureActivity.class);
+                intent.putExtra("signature", me_account_signature.getText());
+                startActivity(intent);
                 break;
             case R.id.me_account_identity_linear:
-                startActivity(new Intent(this,Me_IdentityActivity.class));
+                intent = new Intent(this,Me_IdentityActivity.class);
+                intent.putExtra("name",me_account_identity.getText());
+                intent.putExtra("IDCard",user.getIDCard());
+                startActivity(intent);
                 break;
         }
     }

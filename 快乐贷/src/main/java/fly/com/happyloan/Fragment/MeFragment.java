@@ -8,9 +8,14 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
+import cn.bmob.v3.BmobUser;
+import fly.com.happyloan.Object.Happy_user;
 import fly.com.happyloan.Activity.Me.BorrowCome.Me_BorrowComeActivity;
 import fly.com.happyloan.Activity.Me.BorrowOut.Me_BorrowOutActivity;
 import fly.com.happyloan.Activity.Me.GainProfit.Me_GainProfitActivity;
@@ -41,12 +46,16 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
     TextView me_borrow_out_money;
     TextView me_profit_money;
     TextView me_setting;
+    ImageView head_image;
 
+    TextView me_nickname;
+    Happy_user user;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_me, container, false);
+        user = BmobUser.getCurrentUser(getContext(),Happy_user.class);
         //设置
         me_setting = (TextView)view.findViewById(R.id.me_setting);
         //每项的显示
@@ -59,7 +68,14 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
         me_security = (LinearLayout) view.findViewById(R.id.me_security);
         me_about = (LinearLayout) view.findViewById(R.id.me_about);
 
-        //借出、借入、利润差的金额显示
+        //头像、昵称、借出、借入、利润差的金额显示
+        head_image = (ImageView) view.findViewById(R.id.head_image);
+        String image_url = user.getHeadImage().getUrl();
+        ImageLoader.getInstance().displayImage(image_url, head_image);
+
+        me_nickname = (TextView) view.findViewById(R.id.me_nickname);
+        me_nickname.setText(user.getNickname());
+
         me_borrow_come_money = (TextView) view.findViewById(R.id.me_borrow_come_money);
         me_borrow_out_money = (TextView) view.findViewById(R.id.me_borrow_out_money);
         me_profit_money = (TextView) view.findViewById(R.id.me_profit_money);
@@ -68,6 +84,7 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
 
         return view;
     }
+
     private void Listener(){
 
         me_personal_info.setOnClickListener(this);
@@ -178,5 +195,4 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
         }
         return false;
     }
-
 }
