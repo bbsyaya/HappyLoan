@@ -89,7 +89,6 @@
             android:id="@+id/me_account_nickname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fly_ouyang"
             android:textColor="#ccc"
             android:textSize="@dimen/activity_me_txt_size" />
 
@@ -126,7 +125,6 @@
             android:layout_width="220dp"
             android:gravity="right"
             android:layout_height="wrap_content"
-            android:text="哈哈哈，笑死我了"
             android:singleLine="true"
             android:textColor="#ccc"
             android:textSize="@dimen/activity_me_txt_size" />
@@ -160,7 +158,6 @@
             android:gravity="right"
             android:layout_marginRight="10dp"
             android:layout_height="wrap_content"
-            android:text="12345678901@qq.com"
             android:singleLine="true"
             android:textColor="#ccc"
             android:textSize="@dimen/activity_me_txt_size" />
@@ -195,7 +192,6 @@
             android:layout_width="wrap_content"
             android:gravity="right"
             android:layout_height="wrap_content"
-            android:text="12345678901"
             android:singleLine="true"
             android:textColor="#ccc"
             android:textSize="@dimen/activity_me_txt_size" />
@@ -225,7 +221,6 @@
             android:layout_width="wrap_content"
             android:gravity="right"
             android:layout_height="wrap_content"
-            android:text="欧阳"
             android:singleLine="true"
             android:textColor="#ccc"
             android:textSize="@dimen/activity_me_txt_size" />

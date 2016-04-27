@@ -27,13 +27,14 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.SaveListener;
 import fly.com.happyloan.Activity.MainActivity;
+import fly.com.happyloan.Object.Happy_user;
 import fly.com.happyloan.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
@@ -71,6 +72,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Happy_user user = BmobUser.getCurrentUser(this,Happy_user.class);
+        if (user != null){
+            startActivity(new Intent(this,MainActivity.class));
+            finish();
+        }
 
         // 设置登录表单。
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -202,7 +209,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             user.login(this, new SaveListener() {
                 @Override
                 public void onSuccess() {
-                    Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LoginActivity.this,MainActivity.class));
                     finish();
                 }

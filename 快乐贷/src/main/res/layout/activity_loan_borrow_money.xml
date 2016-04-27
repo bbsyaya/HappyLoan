@@ -153,12 +153,13 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"/>
 
-        <TextView
+        <EditText
+            android:id="@+id/edt_YearInterest"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@null"
             android:gravity="center_vertical"
-            android:text="年利率为0-24之间%"
-            android:id="@+id/tv_YearInterest"/>
+            android:hint="年利率为0-24之间%"/>
 
 
     </LinearLayout>

@@ -21,7 +21,7 @@ public class Loan_BorrowMoneyActivity extends AppCompatActivity implements View.
     ImageView loan_borrowMoney_AboutborrowMoney;
     EditText edt_BorrowMoney;//借款金额
     TextView tv_RefundData;//还款日期
-    TextView tv_YearInterest;//年利率
+    EditText edt_YearInterest;//年利率
     TextView tv_Firend;//指定好友
     Button loan_borrowMoney_submit;
     LinearLayout loan_borrowMoney_friend;
@@ -34,7 +34,7 @@ public class Loan_BorrowMoneyActivity extends AppCompatActivity implements View.
         loan_borrowMoney_AboutborrowMoney = (ImageView) findViewById(R.id.loan_borrowMoney_AboutborrowMoney);
         edt_BorrowMoney = (EditText) findViewById(R.id.edt_BorrowMoney);
         tv_RefundData = (TextView) findViewById(R.id.tv_RefundData);
-        tv_YearInterest = (TextView) findViewById(R.id.tv_YearInterest);
+        edt_YearInterest = (EditText) findViewById(R.id.edt_YearInterest);
         tv_Firend = (TextView) findViewById(R.id.tv_Firend);
         loan_borrowMoney_submit = (Button) findViewById(R.id.loan_borrowMoney_submit);
         loan_borrowMoney_friend = (LinearLayout) findViewById(R.id.loan_borrowMoney_friend);

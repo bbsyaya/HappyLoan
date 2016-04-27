@@ -1,5 +1,6 @@
 package fly.com.happyloan.Activity.Me.PersonalInfo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,6 +20,12 @@ public class Me_IdentityActivity extends AppCompatActivity {
 
         me_authentication_name = (TextView) findViewById(R.id.me_authentication_name);
         me_id_card = (TextView) findViewById(R.id.me_id_card);
+
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("name");
+        String IDCard = intent.getStringExtra("IDCard");
+        me_authentication_name.setText(name);
+        me_id_card.setText(IDCard);
     }
 
     public void Validate(View view){
