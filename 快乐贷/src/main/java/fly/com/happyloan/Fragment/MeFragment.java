@@ -21,9 +21,9 @@ import fly.com.happyloan.Activity.Me.BorrowOut.Me_BorrowOutActivity;
 import fly.com.happyloan.Activity.Me.GainProfit.Me_GainProfitActivity;
 import fly.com.happyloan.Activity.Me.Me_AboutActivity;
 import fly.com.happyloan.Activity.Me.Me_SecurityActivity;
-import fly.com.happyloan.Activity.Me.Me_SincereActivity;
 import fly.com.happyloan.Activity.Me.PersonalInfo.Me_PersonalInfoActivity;
 import fly.com.happyloan.Activity.Me.Setting.SettingActivity;
+import fly.com.happyloan.Activity.Me.Sincere.Me_SincereActivity;
 import fly.com.happyloan.Activity.Me.Wallet.Me_WalletActivity;
 import fly.com.happyloan.R;
 
@@ -70,8 +70,10 @@ public class MeFragment extends Fragment implements View.OnClickListener,View.On
 
         //头像、昵称、借出、借入、利润差的金额显示
         head_image = (ImageView) view.findViewById(R.id.head_image);
-        String image_url = user.getHeadImage().getUrl();
-        ImageLoader.getInstance().displayImage(image_url, head_image);
+        if (user.getHeadImage().getUrl() != null) {
+            String image_url = user.getHeadImage().getUrl();
+            ImageLoader.getInstance().displayImage(image_url, head_image);
+        }
 
         me_nickname = (TextView) view.findViewById(R.id.me_nickname);
         me_nickname.setText(user.getNickname());
