@@ -19,7 +19,7 @@ public class Wallet_RechargeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wallet__recharge);
+        setContentView(R.layout.activity_wallet_recharge);
 
         me_bankcard_recharge_messages = (LinearLayout) findViewById(R.id.me_bankcard_recharge_messages);
         me_wallet_recharge_messages = (TextView) findViewById(R.id.me_wallet_recharge_messages);

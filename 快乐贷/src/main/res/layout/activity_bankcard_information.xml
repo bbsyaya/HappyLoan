@@ -60,7 +60,7 @@
         <TextView
             android:id="@+id/me_bank_name"
             android:layout_gravity="center"
-            android:text="中国建设银行储蓄卡"
+            android:text="中国建设银行"
             android:layout_marginLeft="10dp"
             android:textSize="@dimen/activity_me_txt_size"
             android:layout_width="0dp"
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/me_bankcard_number"
+            android:id="@+id/me_bankcard_phone_number"
             android:layout_gravity="center"
             android:hint="银行预留手机号码"
             android:maxLength="11"
@@ -116,7 +116,7 @@
     <Button
         android:onClick="Next"
         android:layout_marginTop="20dp"
-        android:text="下一步"
+        android:text="验证"
         android:textSize="@dimen/activity_me_txt_size"
         android:background="@color/colorPrimary"
         android:textColor="@color/color_default_bg"

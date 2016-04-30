@@ -1,4 +1,4 @@
-package fly.com.happyloan.Activity.Finds.Activity;
+package fly.com.happyloan.Adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,7 +7,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import fly.com.happyloan.R;
 
@@ -17,11 +20,11 @@ import fly.com.happyloan.R;
 public class WaterfallAdapter extends RecyclerView.Adapter<WaterfallAdapter.WaterfallViewHolder>{
 
 
-    ArrayList<Activities> finds;
+    ArrayList<HashMap<String,Object>> activities;
     MyItemClickListener listener = null;
 
-    public WaterfallAdapter(ArrayList<Activities> finds){
-        this.finds = finds;
+    public WaterfallAdapter(ArrayList<HashMap<String,Object>> activities){
+        this.activities = activities;
     }
 
     @Override
@@ -34,13 +37,14 @@ public class WaterfallAdapter extends RecyclerView.Adapter<WaterfallAdapter.Wate
 
     @Override
     public void onBindViewHolder(WaterfallViewHolder holder, int position) {
-        holder.imageView.setImageResource(finds.get(position).getImg());
-        holder.textView.setText(finds.get(position).getTitle());
+        ImageLoader.getInstance()
+                .displayImage((String) activities.get(position).get("headImages"),holder.imageView);
+        holder.textView.setText(activities.get(position).get("type").toString());
     }
 
     @Override
     public int getItemCount() {
-        return finds.size();
+        return activities.size();
     }
 
     public void setOnItemClickListener(MyItemClickListener listener){

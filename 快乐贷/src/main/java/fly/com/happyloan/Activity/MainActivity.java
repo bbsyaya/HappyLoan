@@ -14,6 +14,7 @@ import fly.com.happyloan.Fragment.FriendsFragment;
 import fly.com.happyloan.Fragment.LoanFragment;
 import fly.com.happyloan.Fragment.MeFragment;
 import fly.com.happyloan.R;
+import fly.com.happyloan.Util.App;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        App.getInstance().addActivity(this);
+
         findViewById();
         // 碎片
         Fragment();

@@ -35,7 +35,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="130dp"
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -43,7 +43,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="100dp"
         android:background="@null"
         android:id="@+id/edt_reward_content"
         android:hint="请输入悬赏内容"/>
@@ -51,14 +51,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="60dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/finds_urges"
-                android:id="@+id/add_images"/>
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"

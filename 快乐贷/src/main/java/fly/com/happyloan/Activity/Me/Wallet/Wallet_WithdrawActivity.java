@@ -18,7 +18,7 @@ public class Wallet_WithdrawActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wallet__withdraw);
+        setContentView(R.layout.activity_wallet_withdraw);
 
         me_bankcard_withdraw_messages = (LinearLayout) findViewById(R.id.me_bankcard_withdraw_messages);
         me_wallet_withdraw_messages = (TextView) findViewById(R.id.me_wallet_withdraw_messages);

@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -28,7 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".ImageLoader.ImageSelectActivity" />
+        <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.Me.Me_AboutActivity" />
         <activity android:name=".Activity.Me.BorrowCome.Me_BorrowComeActivity" />
         <activity android:name=".Activity.Me.BorrowOut.Me_BorrowOutActivity" />
@@ -95,10 +96,13 @@
         </activity>
         <activity android:name=".Activity.Loan.Loan_ListVIew_GainInterestActivity" >
         </activity>
-        <activity android:name=".Activity.Finds.Activity.Finds_Activity_DetailsActivity"/>
-        <activity android:name=".Activity.Finds.Activity.Finds_ActivitysActivity"/>
-        <activity android:name=".Activity.Finds.Activity.Finds_EditActivity"/>
-        <activity android:name=".Activity.Login.RegisterActivity"/>
+        <activity android:name=".Activity.Finds.Activity.Finds_Activity_DetailsActivity" />
+        <activity android:name=".Activity.Finds.Activity.Finds_ActivitysActivity" />
+        <activity android:name=".Activity.Finds.Activity.Finds_EditActivity" />
+        <activity android:name=".Activity.Login.RegisterActivity" />
+        <activity android:name=".Activity.Me.Sincere.Me_SincereActivity" />
+        <activity android:name=".Activity.Finds.Reward.Finds_Reward_ListViewActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import java.util.List;
 
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobDate;
+import cn.bmob.v3.datatype.BmobFile;
 
 /**
  * Created by Candy-X on 2016/4/27/0027.
@@ -11,7 +12,7 @@ import cn.bmob.v3.datatype.BmobDate;
 public class Happy_notice extends BmobObject{//公告类
 
     String title;//标题
-    List noticeImages;//公告图片
+    BmobFile noticeImages;//公告图片
     String content;//公告内容
     BmobDate noticeTime;//发布时间
 
@@ -24,11 +25,11 @@ public class Happy_notice extends BmobObject{//公告类
         this.title = title;
     }
 
-    public List getNoticeImages() {
+    public BmobFile getNoticeImages() {
         return noticeImages;
     }
 
-    public void setNoticeImages(List noticeImages) {
+    public void setNoticeImages(BmobFile noticeImages) {
         this.noticeImages = noticeImages;
     }
 

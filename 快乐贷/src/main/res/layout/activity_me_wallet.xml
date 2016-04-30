@@ -99,27 +99,24 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <fly.com.happyloan.View.MyListView
+            <ListView
                 android:id="@+id/me_wallet_bankcard"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-            </fly.com.happyloan.View.MyListView>
+            </ListView>
 
             <LinearLayout
                 android:id="@+id/me_wallet_add_bankcard"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="30dp"
                 android:background="@color/color_default_bg"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -140,6 +137,5 @@
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>

@@ -13,7 +13,7 @@ public class Wallet_PaymentsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wallet__payments);
+        setContentView(R.layout.activity_wallet_payments);
 
         me_wallet_payments_list = (ListView) findViewById(R.id.me_wallet_payments_list);
     }

@@ -18,7 +18,7 @@ public class Me_NicknameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_me__nickname);
+        setContentView(R.layout.activity_me_nickname);
 
         user = BmobUser.getCurrentUser(this,Happy_user.class);
 

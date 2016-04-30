@@ -20,7 +20,7 @@ public class Me_SignatureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_me__signature);
+        setContentView(R.layout.activity_me_signature);
 
         user = BmobUser.getCurrentUser(this,Happy_user.class);
 

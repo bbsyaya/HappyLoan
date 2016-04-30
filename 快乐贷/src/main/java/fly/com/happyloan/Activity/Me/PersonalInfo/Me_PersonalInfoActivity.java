@@ -10,9 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
+import fly.com.happyloan.Object.Happy_user;
 import fly.com.happyloan.R;
+import fly.com.happyloan.Util.App;
 
 public class Me_PersonalInfoActivity extends AppCompatActivity implements
         View.OnClickListener, View.OnTouchListener {
@@ -25,6 +26,8 @@ public class Me_PersonalInfoActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me_personal_info);
+
+        App.getInstance().addActivity(this);
 
         findViewById();
         Listener();
@@ -80,10 +83,12 @@ public class Me_PersonalInfoActivity extends AppCompatActivity implements
             public void onClick(DialogInterface dialog, int which) {
                 switch (which){
                     case DialogInterface.BUTTON_POSITIVE:
-                        Toast.makeText(Me_PersonalInfoActivity.this, "确定", Toast.LENGTH_SHORT).show();
+                        Happy_user.logOut(getApplicationContext()); //清除缓存用户对象
+                        // 现在的currentUser是null了
+                        App.getInstance().exit();
                         break;
                     case DialogInterface.BUTTON_NEGATIVE:
-                        Toast.makeText(Me_PersonalInfoActivity.this, "取消", Toast.LENGTH_SHORT).show();
+                        break;
                 }
             }
         };

@@ -16,7 +16,7 @@ public class Me_IdentityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_me__identity);
+        setContentView(R.layout.activity_me_identity);
 
         me_authentication_name = (TextView) findViewById(R.id.me_authentication_name);
         me_id_card = (TextView) findViewById(R.id.me_id_card);

@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.xys.libzxing.zxing.activity.CaptureActivity;
 import com.xys.libzxing.zxing.encoding.EncodingUtils;
 
@@ -18,6 +19,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Calendar;
 
+import cn.bmob.v3.BmobUser;
+import fly.com.happyloan.Object.Happy_user;
 import fly.com.happyloan.R;
 
 public class Me_ScanActivity extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener {
@@ -25,7 +28,10 @@ public class Me_ScanActivity extends AppCompatActivity implements View.OnClickLi
     TextView me_scan_scan;
     ImageView me_scan_image;
     ImageView me_info_scan_back;
+    ImageView me_scan_head_image;
+    TextView me_scan_nickname;
 
+    Happy_user user;
     Bitmap bitmap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +40,12 @@ public class Me_ScanActivity extends AppCompatActivity implements View.OnClickLi
         me_scan_scan = (TextView) findViewById(R.id.me_scan_scan);
         me_scan_image = (ImageView) findViewById(R.id.me_scan_image);
         me_info_scan_back = (ImageView) findViewById(R.id.me_info_scan_back);
+
+        me_scan_nickname = (TextView) findViewById(R.id.me_scan_nickname);
+        me_scan_head_image = (ImageView) findViewById(R.id.me_scan_head_image);
+        user = BmobUser.getCurrentUser(this,Happy_user.class);
+        me_scan_nickname.setText(user.getNickname());
+        ImageLoader.getInstance().displayImage(user.getHeadImage().getUrl(),me_scan_head_image);
 
         make();
         me_scan_scan.setOnClickListener(this);

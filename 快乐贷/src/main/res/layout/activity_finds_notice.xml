@@ -34,18 +34,6 @@
             android:textColor="@color/color_actionbar_txt"
             android:textSize="@dimen/actionbar_txt_size" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="编辑"
-            android:id="@+id/notice_compile"
-            android:textColor="@color/color_gb_false"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginEnd="10dp" />
-
     </RelativeLayout>
 
     <ListView

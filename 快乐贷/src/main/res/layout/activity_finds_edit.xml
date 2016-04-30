@@ -57,12 +57,14 @@
         <EditText
             android:id="@+id/edit_write"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
             android:background="@null"
             android:hint="写点什么吧..."
             android:maxLines="5" />
 
         <GridView
+            android:layout_marginTop="80dp"
             android:id="@+id/edit_grid_images"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

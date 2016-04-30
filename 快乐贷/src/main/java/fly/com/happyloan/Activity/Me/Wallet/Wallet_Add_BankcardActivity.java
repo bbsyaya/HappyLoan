@@ -6,15 +6,32 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import cn.bmob.v3.BmobUser;
+import fly.com.happyloan.Object.Happy_user;
 import fly.com.happyloan.R;
+import fly.com.happyloan.Util.App;
 
 public class Wallet_Add_BankcardActivity extends AppCompatActivity {
 
+    TextView me_bank_name;
+    EditText me_bankcard_number;
+    Happy_user user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wallet__add__bankcard);
+        setContentView(R.layout.activity_wallet_add_bankcard);
+
+        App.getInstance().addActivity(this);
+
+        me_bank_name = (TextView) findViewById(R.id.me_bank_name);
+        me_bankcard_number = (EditText) findViewById(R.id.me_bankcard_number);
+
+        user = BmobUser.getCurrentUser(this,Happy_user.class);
+        me_bank_name.setText(user.getName());
     }
 
     public void Back(View view) {
@@ -43,7 +60,15 @@ public class Wallet_Add_BankcardActivity extends AppCompatActivity {
     }
 
     public void Next(View v) {
-        startActivity(new Intent(this,Bankcard_InformationActivity.class));
+        Intent intent = new Intent(this,Bankcard_InformationActivity.class);
+        String bank_num = me_bankcard_number.getText().toString();
+        if (!bank_num.equals("") && bank_num.length() == 19){
+            intent.putExtra("bank_num",bank_num);
+            startActivity(intent);
+            finish();
+        }else {
+            Toast.makeText(this, "卡号错误", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void Warn(View v) {

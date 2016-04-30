@@ -15,7 +15,6 @@ import fly.com.happyloan.R;
 public class Finds_Reward_CompileActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText edt_reward_content;//悬赏内容
-    ImageView add_images;//添加照片
     EditText edt_reward_num;//赏金个数
     EditText edt_reward_countMoney;//总金额
     LinearLayout finds_reward_compile_friend;//指定好友
@@ -26,7 +25,6 @@ public class Finds_Reward_CompileActivity extends AppCompatActivity implements V
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finds_reward_compile);
         edt_reward_content = (EditText) findViewById(R.id.edt_reward_content);
-        add_images = (ImageView) findViewById(R.id.add_images);
         edt_reward_num = (EditText) findViewById(R.id.edt_reward_num);
         edt_reward_countMoney = (EditText) findViewById(R.id.edt_reward_countMoney);
         finds_reward_compile_friend = (LinearLayout) findViewById(R.id.finds_reward_compile_friend);
